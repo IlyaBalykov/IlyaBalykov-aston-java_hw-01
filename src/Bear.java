@@ -1,7 +1,7 @@
 public class Bear extends Mammal {
     private static final String ANIMAL_SPEC = "bear";
 
-    public Bear(String name, boolean hasWool) {
+    public Bear(String name) {
         super(name);
     }
 
