@@ -1,17 +1,15 @@
 public class Bear extends Mammal implements Wool {
-    private static final String animalSpec = "bear";
-    private String animalName;
+    private static final String ANIMAL_SPEC = "bear";
 
     public Bear(String name) {
-        this.animalName = name;
+        super(name);
     }
 
     @Override
     public void wool() {
-        System.out.printf("The %s has fur\n", animalSpec);
+        System.out.printf("The %s has fur\n", ANIMAL_SPEC);
     }
-
     public String getName() {
-        return animalName;
+        return name;
     }
 }
