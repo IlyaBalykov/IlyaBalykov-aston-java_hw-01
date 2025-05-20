@@ -9,4 +9,9 @@ public class Whale extends Mammal implements LivesInWater{
     public void water() {
         System.out.printf("The %s lives in water\n", ANIMAL_SPEC);
     }
+
+    @Override
+    public boolean hasWool() {
+        return false;
+    }
 }
