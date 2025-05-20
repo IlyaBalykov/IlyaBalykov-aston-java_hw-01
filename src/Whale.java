@@ -1,4 +1,4 @@
-public class Whale extends Mammal implements Water{
+public class Whale extends Mammal implements LivesInWater{
     private static final String ANIMAL_SPEC = "whale";
 
     public Whale(String name) {
