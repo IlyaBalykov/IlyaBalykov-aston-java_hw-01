@@ -1,5 +1,5 @@
 public class Bear extends Mammal implements Wool {
-    private static final String animalSpec = "bear";
+    private static final String ANIMAL_SPEC = "bear";
     private String animalName;
 
     public Bear(String name) {
@@ -8,7 +8,7 @@ public class Bear extends Mammal implements Wool {
 
     @Override
     public void wool() {
-        System.out.printf("The %s has fur\n", animalSpec);
+        System.out.printf("The %s has fur\n", ANIMAL_SPEC);
     }
 
     public String getName() {
