@@ -1,18 +1,12 @@
 public class Fish extends Animal implements Water {
-    protected static final String animalSpec = "fish";
-    private String animalName;
+    protected static final String ANIMAL_SPEC = "fish";
 
     public Fish(String name) {
-        super(true);
-        this.animalName = name;
+        super(name, true);
     }
 
     @Override
     public void water() {
-        System.out.printf("The %s lives in water\n", animalSpec);
-    }
-
-    public String getName() {
-        return this.animalName;
+        System.out.printf("The %s lives in water\n", ANIMAL_SPEC);
     }
 }
