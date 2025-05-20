@@ -1,11 +1,15 @@
-public class Cat extends Mammal implements Wool {
+public class Cat extends Mammal {
     private static final String ANIMAL_SPEC= "cat";
+    private final boolean hasWool;
 
-    public Cat(String name) {
+    public Cat(String name, boolean hasWool) {
         super(name);
+        this.hasWool = hasWool
+        ;
     }
+
     @Override
-    public void wool() {
-        System.out.printf("The %s has fur\n", ANIMAL_SPEC);
+    public boolean hasWool() {
+        return hasWool;
     }
 }
