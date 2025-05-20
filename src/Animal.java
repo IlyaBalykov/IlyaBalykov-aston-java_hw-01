@@ -12,7 +12,7 @@ public abstract class Animal {
     }
 
     public void getHasSpine() {
-        if(hasSpine) {
+        if(HAS_SPINE) {
             System.out.println("This animal has a spine");
         }
     }
