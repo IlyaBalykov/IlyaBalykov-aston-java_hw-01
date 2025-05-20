@@ -1,10 +1,10 @@
 public abstract class Animal {
-    private String name;
-    private boolean hasSpine;
+    private final String NAME ;
+    private final boolean HAS_SPINE;
 
     protected Animal(String name, boolean hasSpine) {
-        this.name = name;
-        this.hasSpine = hasSpine;
+        NAME = name;
+        HAS_SPINE = hasSpine;
     }
 
     public void spec() {
