@@ -9,7 +9,4 @@ public class Whale extends Mammal implements Water{
     public void water() {
         System.out.printf("The %s lives in water\n", ANIMAL_SPEC);
     }
-    public String getName() {
-        return this.name;
-    }
 }

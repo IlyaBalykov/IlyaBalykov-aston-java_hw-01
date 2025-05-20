@@ -8,7 +8,4 @@ public class Cat extends Mammal implements Wool {
     public void wool() {
         System.out.printf("The %s has fur\n", ANIMAL_SPEC);
     }
-    public String getName() {
-        return this.name;
-    }
 }
