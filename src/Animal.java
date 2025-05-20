@@ -1,7 +1,9 @@
 public abstract class Animal {
+    private String name;
     private boolean hasSpine;
 
-    protected Animal(boolean hasSpine) {
+    protected Animal(String name, boolean hasSpine) {
+        this.name = name;
         this.hasSpine = hasSpine;
     }
 
