@@ -1,8 +1,10 @@
 public abstract class Animal {
-    private boolean hasSpine;
+    private final String NAME ;
+    private final boolean HAS_SPINE;
 
-    protected Animal(boolean hasSpine) {
-        this.hasSpine = hasSpine;
+    protected Animal(String name, boolean hasSpine) {
+        NAME = name;
+        HAS_SPINE = hasSpine;
     }
 
     public void spec() {
@@ -10,7 +12,7 @@ public abstract class Animal {
     }
 
     public void getHasSpine() {
-        if(hasSpine) {
+        if(HAS_SPINE) {
             System.out.println("This animal has a spine");
         }
     }
