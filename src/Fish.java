@@ -6,7 +6,7 @@ public class Fish extends Animal implements LivesInWater {
     }
 
     @Override
-    public void water() {
-        System.out.printf("The %s lives in water\n", ANIMAL_SPEC);
+    public String getLivesInWater() {
+        return "The " + ANIMAL_SPEC + "lives in water";
     }
 }
