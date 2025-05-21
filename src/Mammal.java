@@ -1,8 +1,8 @@
 public abstract class Mammal extends Animal {
 
     public Mammal(String name) {
-        super(name);
+        super(name, true);
     }
 
-    public abstract boolean hasWool();
+    public abstract boolean getHasWool();
 }
