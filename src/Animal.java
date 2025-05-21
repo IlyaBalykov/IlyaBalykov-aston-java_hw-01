@@ -36,7 +36,7 @@ public abstract class Animal {
         Mammal persianCat = new Cat("Barsik", true);
         persianCat.getName();
         persianCat.getHasSpine();
-        persianCat.gethasWool();
+        persianCat.getHasWool();
 
         Mammal blueWhale = new Whale("Whale");
         blueWhale.getName();
