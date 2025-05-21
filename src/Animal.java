@@ -1,21 +1,8 @@
 public abstract class Animal {
-    private String name ;
-    private final boolean HAS_SPINE;
+    private String name;
 
-    protected Animal(String name, boolean hasSpine) {
-        HAS_SPINE = hasSpine;
+    protected Animal(String name) {
         this.name = name;
-    }
-
-    public String spec() {
-        return "This is an animal";
-    }
-
-    public String getHasSpine() {
-        if(HAS_SPINE) {
-            return "This animal has a spine";
-        }
-        return "This animal does not have a spine";
     }
 
     public String getName() {
@@ -30,22 +17,25 @@ public abstract class Animal {
 
         Mammal polarBear = new Bear("Misha");
         polarBear.getName();
-        polarBear.getHasSpine();
-        polarBear.getHasWool();
+        polarBear.getFurColor();
+        polarBear.hasSpine();
 
         Mammal persianCat = new Cat("Barsik", true);
         persianCat.getName();
-        persianCat.getHasSpine();
-        persianCat.getHasWool();
+        persianCat.getFurColor();
+        persianCat.hasSpine();
+        ;
 
         Mammal blueWhale = new Whale("Whale");
         blueWhale.getName();
-        blueWhale.getHasSpine();
-        blueWhale.getHasWool();
+        blueWhale.getFurColor();
+        ;
+        blueWhale.hasSpine();
+        ;
 
         Fish goldenFish = new Fish("Gold");
         goldenFish.getName();
-        goldenFish.getHasSpine();
         goldenFish.getLivesInWater();
+        goldenFish.getHasSpine();
     }
 }
