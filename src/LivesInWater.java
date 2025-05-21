@@ -1,3 +1,3 @@
 public interface LivesInWater {
-    void getLivesInWater();
+    String getLivesInWater();
 }
