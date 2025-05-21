@@ -7,14 +7,15 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public void spec() {
-        System.out.println("This is an animal");
+    public String spec() {
+        return "This is an animal";
     }
 
-    public void getHasSpine() {
+    public String getHasSpine() {
         if(HAS_SPINE) {
-            System.out.println("This animal has a spine");
+            return "This animal has a spine";
         }
+        return "This animal does not have a spine";
     }
 
     public String getName() {
@@ -27,5 +28,24 @@ public abstract class Animal {
 
     public static void main(String[] args) {
 
+        Mammal polarBear = new Bear("Misha");
+        polarBear.getName();
+        polarBear.getHasSpine();
+        polarBear.hasWool();
+
+        Mammal persianCat = new Cat("Barsik", true);
+        persianCat.getName();
+        persianCat.getHasSpine();
+        persianCat.gethasWool();
+
+        Mammal blueWhale = new Whale("Whale");
+        blueWhale.getName();
+        blueWhale.getHasSpine();
+        blueWhale.getHasWool();
+
+        Fish goldenFish = new Fish("Gold");
+        goldenFish.getName();
+        goldenFish.getHasSpine();
+        goldenFish.getLivesInWater();
     }
 }
