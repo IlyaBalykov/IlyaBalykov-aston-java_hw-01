@@ -1,12 +1,5 @@
 public class Bear extends Mammal {
-    private static final String ANIMAL_SPEC = "bear";
-
-    public Bear(String name) {
-        super(name);
-    }
-
-    @Override
-    public boolean getHasWool() {
-        return true;
+    public Bear(String name, String furColor) {
+        super(name, furColor);
     }
 }

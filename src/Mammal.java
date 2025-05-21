@@ -1,8 +1,23 @@
-public abstract class Mammal extends Animal {
+public abstract class Mammal extends Animal implements Vertebrate, Fur {
 
-    public Mammal(String name) {
-        super(name, true);
+    private final String furColor;
+
+    public Mammal(String name, String furColor) {
+        super(name);
+        this.furColor = furColor;
     }
 
-    public abstract boolean getHasWool();
+    public String getFurColor() {
+        return furColor;
+    }
+
+    @Override
+    public boolean hasSpine() {
+        return true;
+    };
+
+    @Override
+    public boolean hasFur() {
+        return furColor != null;
+    };
 }
