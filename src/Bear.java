@@ -6,7 +6,7 @@ public class Bear extends Mammal {
     }
 
     @Override
-    public boolean hasWool() {
+    public boolean getHasWool() {
         return true;
     }
 }

@@ -4,12 +4,11 @@ public class Cat extends Mammal {
 
     public Cat(String name, boolean hasWool) {
         super(name);
-        this.hasWool = hasWool
-        ;
+        this.hasWool = hasWool;
     }
 
     @Override
-    public boolean hasWool() {
+    public boolean getHasWool() {
         return hasWool;
     }
 }
