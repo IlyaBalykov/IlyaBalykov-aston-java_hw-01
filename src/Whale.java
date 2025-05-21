@@ -11,7 +11,7 @@ public class Whale extends Mammal implements LivesInWater{
     }
 
     @Override
-    public boolean hasWool() {
+    public boolean getHasWool() {
         return false;
     }
 }
